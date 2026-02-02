@@ -1,4 +1,10 @@
 import ollama
 
-response = ollama.generate(model='gemma:latest', prompt='Diga Olá Mundo')
-print(response)
+stream = ollama.chat(
+    model='gemma:latest',
+    messages=[{'role': 'user', 'content': 'Diga Olá Mundo'}],
+    stream=True,
+)
+
+for chunk in stream:
+    print(chunk['message']['content'], end='', flush=True)
