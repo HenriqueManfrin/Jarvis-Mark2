@@ -1,9 +1,11 @@
 import ollama
 
+MensagemInicial = input("Escreva aqui a sua mensagem: ")
+
 stream = ollama.chat(
     model='gemma:latest',
-    messages=[{'role': 'user', 'content': 'Diga Olá Mundo'}],
-    stream=True,
+    messages=[{'role': 'user', 'content': MensagemInicial}],
+    stream=True, 
 )
 
 for chunk in stream:
