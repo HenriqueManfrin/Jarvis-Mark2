@@ -1,4 +1,4 @@
-# Jarvis Mark 2 🤖
+# Jarvis Mark 2
 
 Novo Jarvis, criado inteiramente por mim.
 
