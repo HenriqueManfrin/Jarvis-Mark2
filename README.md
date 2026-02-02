@@ -2,7 +2,7 @@
 
 Novo Jarvis, criado inteiramente por mim.
 
-### 🎯 Principais Objetivos
+### Principais Objetivos
 Os principais objetivos dessa nova versão são:
 * **Tornar o código** mais modular e limpo.
 * **Tornar o código** entregável para qualquer tipo de máquina que atenda os pré-requisitos necessários
