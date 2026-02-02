@@ -10,7 +10,7 @@ Os principais objetivos dessa nova versão são:
 
 Fase 2
 
-* **Adicionar Novas funcionalidades e tecnologias
+* **Adicionar novas funcionalidades e tecnologias**
 
 Tecnologias
 
