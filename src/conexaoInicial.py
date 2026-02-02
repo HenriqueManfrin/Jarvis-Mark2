@@ -1,13 +1,17 @@
 import ollama
+from system_prompt import system_prompt_Jarvis
+
 def conversacao():
     while True:
-        MensagemInicial = input('\n'"Escreva aqui a sua mensagem: ")
-        if MensagemInicial == "sair":
+        Mensagem = input('\n'"Escreva aqui a sua mensagem: ")
+        if Mensagem == "sair":
             exit()
+        
+        ollama.create(model='Jarvis', from_='gemma:latest', system= system_prompt_Jarvis)
 
         stream = ollama.chat(
-            model='gemma:latest',
-            messages=[{'role': 'user', 'content': MensagemInicial}],
+            model='Jarvis',
+            messages=[{'role': 'user', 'content': Mensagem}],
             stream=True, 
         )
 
